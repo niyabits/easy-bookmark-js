@@ -1,3 +1,12 @@
+/**
+*  Made for Google Code In with love <3 
+*
+* @version 1.0.0
+* @author  Yash Gupta
+* @license MIT
+*
+**/
+
 //  Getting the elements
 const form = document.querySelector("#app-form");
 const bookmark = document.querySelector("#bookmark");
