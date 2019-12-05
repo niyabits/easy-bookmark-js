@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Easy Bookmark</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Easy Bookmark</h1>
+      <div class="app">
+        <form id="app-form">
+          <label for="bookmark">Enter URL: </label><br />
+          <input type="text" name="bookmark" id="bookmark" /><br />
+          <button id="add" class="btn">Add</button>
+        </form>
+        <!-- App Container -->
+        <div class="app-container">
+          <div class="bookmarked-url">
+            <a href="https://yashguptaz.com" target="_blank"
+              >https://yashguptaz.com</a
+            >
+            <a href="#" class="delete-item">
+              <span>x</span>
+            </a>
+          </div>
+
+          <div class="bookmarked-url">
+            <a href="https://a.com" target="_blank">https://a.com</a>
+            <a href="#" class="delete-item">
+              <span>x</span>
+            </a>
+          </div>
+
+          <div class="bookmarked-url">
+            <a href="https://b.com" target="_blank">https://b.com</a>
+            <a href="#" class="delete-item">
+              <span>x</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
