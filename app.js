@@ -36,11 +36,13 @@ const setLS = () => {
 // Load all the bookmarks when the app starts
 window.addEventListener('DOMContentLoaded', _ => { 
   let bookmarksJSON = localStorage.getItem("state");
-  bookmarksArr = JSON.parse(bookmarksJSON);
   
-  bookmarksArr.forEach(item => {
-    appContainer.innerHTML += makeMarkup(item)
-  })
+  if (bookmarksJSON !== null) {
+    bookmarksArr = JSON.parse(bookmarksJSON);
+    bookmarksArr.forEach(item => {
+      appContainer.innerHTML += makeMarkup(item)
+    })
+  }
 })
 
 // Adding event listerner to the form
